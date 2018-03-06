@@ -1,9 +1,26 @@
 import React from 'react';
+import Draggable from 'react-draggable';
 
-const About = () => {
-  return (
-    <section className="main__about">ABOUT</section>
-  );
-};
+class About extends React.Component {
+  render() {
+    return (
+      <Draggable
+        axis="y"
+        handle=".handle"
+        defaultPosition={{ x: 0, y: 0 }}
+        position={null}
+        grid={[25, 25]}
+        onStart={this.handleStart}
+        onDrag={this.handleDrag}
+        onStop={this.handleStop}
+      >
+        <div>
+          <section className="main__about">ABOUT</section>
+          <div className="handle" style={{ height: '300px', backgroundColor: 'lightblue' }}>Drag from here</div>
+        </div>
+      </Draggable>
+    );
+  }
+}
 
 export default About;
