@@ -10,20 +10,26 @@ const Root = () => {
   return (
     <Router>
       <div>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/work">Work</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
-        </ul>
+        <nav className="navigation">
+          <ul className="navigation__links">
+            <li className="navigation__link">
+              <Link to="/">
+                <div className="logo__container">
+                  <img src="../vendors/img/logo.svg" alt="mogeee logo" />
+                </div>
+              </Link>
+            </li>
+            <li className="navigation__link">
+              <Link to="/work">Work</Link>
+            </li>
+            <li className="navigation__link">
+              <Link to="/about">About</Link>
+            </li>
+            <li className="navigation__link">
+              <Link to="/contact">Contact</Link>
+            </li>
+          </ul>
+        </nav>
         <Route path="/" component={App} />
         <Route path="/work" component={Work} />
         <Route path="/about" component={About} />

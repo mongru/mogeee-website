@@ -1,0 +1,9 @@
+.navigation {
+  // display: flex;
+  // justify-content: space-between;
+  width: 90vw;
+  &__links {
+    display: flex;
+    justify-content: space-between;
+  }
+}

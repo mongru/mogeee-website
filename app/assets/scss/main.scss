@@ -1,5 +1,14 @@
+@import 'base/reset';
+@import 'base/fonts';
+@import 'layout/nav';
+
 $color: blue;
 
 body {
   color: $color;
+  font-family: $paragraphFont;
+}
+
+img {
+  width: 10em;
 }
