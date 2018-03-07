@@ -10,7 +10,7 @@ import Contact from '../components/Contact';
 const Root = () => {
   return (
     <Router>
-      <div>
+      <div className="wrapper">
         <Nav />
         <Route path="/" component={App} />
         <Route path="/work" component={Work} />

@@ -27,6 +27,8 @@
   },
   "dependencies": {
     "cross-env": "5.0.1",
+    "material-ui": "^0.20.0",
+    "nuka-carousel": "^3.0.1",
     "react": "15.6.1",
     "react-dom": "15.6.1",
     "react-draggable": "^3.0.5",

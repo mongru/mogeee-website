@@ -1,4 +1,9 @@
 .nav {
+  height: 4em;
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0.99);
+  position: fixed;
+  z-index: 3;
   &__container {
     display: flex;
     justify-content: space-between;
@@ -6,8 +11,35 @@
     padding: 0 6vw;
   }
   &__logo {
+    width: 10em;
+    &__link {
+      cursor: pointer;
+      &::after {
+        content: '';
+        width: 0;
+        height: 0;
+        display: block;
+        position: absolute;
+        z-index: 1;
+        border-radius: 50%;
+        background-color: $accentColor;
+      }
+      &:hover::after {
+        content: '';
+        width: 14px;
+        height: 14px;
+        display: block;
+        position: absolute;
+        z-index: 1;
+        top: 1.45em;
+        left: 16em;
+        border-radius: 50%;
+        background-color: $accentColor;
+        transition: width 0.2s ease-in-out;
+      }
+    }
     &__container {
-      flex-basis: 200px;
+      flex-basis: auto;
     }
   }
   &__links {
@@ -17,6 +49,27 @@
   }
   &__link {
     padding: 0 6vw;
+    &::before {
+      content: '';
+      width: 0;
+      height: 0;
+      display: block;
+      position: absolute;
+      z-index: 1;
+      border-radius: 50%;
+      background-color: $accentColor;
+    }
+    &:hover::before {
+      content: '';
+      width: 14px;
+      height: 14px;
+      display: block;
+      position: absolute;
+      z-index: 1;
+      border-radius: 50%;
+      background-color: $accentColor;
+      transition: height 0.2s;
+    }
     &:last-child {
       padding-right: 0;
     }

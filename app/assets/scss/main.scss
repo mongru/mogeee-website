@@ -1,14 +1,13 @@
-@import 'base/reset';
-@import 'base/fonts';
+@import 'base/all';
 @import 'layout/nav';
-
-$color: blue;
+@import 'layout/hero';
 
 body {
-  color: $color;
-  font-family: $paragraphFont;
+  color: $mainColor;
+  font-family: $mainFont;
+  overflow-x: hidden;
 }
 
-img {
-  width: 10em;
+.wrapper {
+  height: 100vh;
 }

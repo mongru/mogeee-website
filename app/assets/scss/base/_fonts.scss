@@ -1,3 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash&subset=latin-ext');
 
-$paragraphFont: 'Source Sans Pro', sans-serif;
+$mainFont: 'Source Sans Pro', sans-serif;
+$funkyFont: 'Berkshire Swash', cursive;
+
+$fontSize: (
+  h1: 2em,
+  p: 1em
+);
+
+$lineHeight: (
+  h1: 2em,
+  p: 2em
+)
