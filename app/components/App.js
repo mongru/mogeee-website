@@ -3,10 +3,6 @@ import Draggable from 'react-draggable';
 
 
 class App extends React.Component {
-  // eventLogger = (e: MouseEvent, data: Object) => {
-  //   console.log('Event: ', e);
-  //   console.log('Data: ', data);
-  // };
   render() {
     return (
       <div>

@@ -32,7 +32,8 @@
     "react-draggable": "^3.0.5",
     "react-hot-loader": "3.0.0-beta.6",
     "react-loadable": "^5.3.1",
-    "react-router-dom": "4.2.0"
+    "react-router-dom": "4.2.0",
+    "react-shuffle": "^2.1.0"
   },
   "devDependencies": {
     "babel-cli": "6.26.0",
