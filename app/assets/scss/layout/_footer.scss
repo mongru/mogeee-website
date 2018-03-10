@@ -16,9 +16,12 @@
   &__icon {
     color: $mainColor;
   }
+  &__btn-box {
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+  }
   &__btn {
-    width: 10vw;
-    // align-self: flex-end;
     text-transform: uppercase;
   }
 }
