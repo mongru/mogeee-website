@@ -19,8 +19,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.49);
-    border-radius: 20px;
+    // background-color: rgba(255, 255, 255, 0.49);
+    // border-radius: 20px;
   }
   &__heading {
     font-size: map-get($fontSize, h1);
@@ -44,10 +44,31 @@
 }
 
 .carousel {
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+  }
   &__item {
-    height: 100vh;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: auto;
-    background-color: lightgrey;
+    // background-color: lightgrey;
+  }
+  &__heading {
+    font-size: map-get($fontSize, h1);
+    letter-spacing: 0.4em;
+    line-height: map-get($lineHeight, h1);
+  }
+  &__text {
+    font-size: map-get($fontSize, p);
+    line-height: map-get($lineHeight, p);
+    letter-spacing: 0.1em;
+    text-rendering: optimizeLegibility;
   }
   &__img {
     width: 100%;

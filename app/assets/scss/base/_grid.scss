@@ -1,9 +1,15 @@
 @import 'media_queries';
+$max-width: 100%;
 
 .container__wrapper {
     width: 100%;
     margin: 0 auto;
     overflow-x: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100vh;
+    min-height: 100vh;
+    // padding: 0 6vw;
 }
 
 .container {

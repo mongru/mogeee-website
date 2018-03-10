@@ -1,13 +1,11 @@
 @import 'base/all';
 @import 'layout/nav';
 @import 'layout/hero';
+@import 'layout/work';
+@import 'layout/footer';
 
 body {
   color: $mainColor;
   font-family: $mainFont;
   overflow-x: hidden;
-}
-
-.wrapper {
-  height: 100vh;
 }

@@ -1,0 +1,24 @@
+.footer {
+  &__container {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 6vw;
+  }
+  &__icons {
+    width: 10vw;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__icon {
+    color: $mainColor;
+  }
+  &__btn {
+    width: 10vw;
+    // align-self: flex-end;
+    text-transform: uppercase;
+  }
+}
