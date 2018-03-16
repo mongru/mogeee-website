@@ -1,16 +1,26 @@
+.work__wrapper {
+  display: flex;
+}
 .gallery {
   &__container {
+    max-width: 1200px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    // justify-content: space-around;
+    // align-items: center;
   }
   &__item {
+    width: 400px;
+    height: 400px;
+    background-color: $neutralColor;
     max-width: $max-width;
-    padding-top: 10vh;
+    // padding-top: 10vh;
     // @media screen and #{$desktop} {
     //   width: calc(100% / 3);
     // }
+    &--dark {
+      background-color: $mainColor;
+    }
   }
 }

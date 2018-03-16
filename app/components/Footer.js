@@ -12,6 +12,7 @@ const Footer = () => {
         </div>
         <div className="footer__btn-box">
           <button className="footer__btn" type="submit" name="button">go go go</button>
+          <FontAwesome className="footer__icon" name="arrow-right" size="1x" />
         </div>
       </div>
     </footer>

@@ -12,6 +12,8 @@
   }
   &__logo {
     width: 10em;
+    // font-family: $superFunkyFont;
+    // font-size: map-get($fontSize, h1);
     &__link {
       cursor: pointer;
       &::after {
@@ -23,6 +25,10 @@
         z-index: 1;
         border-radius: 50%;
         background-color: $accentColor;
+      }
+      &:hover {
+        font-family: $superFunkyFont;
+        color: $accentColor;
       }
       &:hover::after {
         content: '';
