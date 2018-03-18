@@ -1,33 +1,37 @@
 import React from 'react';
 // import Draggable from 'react-draggable';
+import { Link } from 'react-router-dom';
+import { works } from '../work_content';
+import WorkItem from './WorkItem';
 
 class Work extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      works ,
+    };
+  }
+
+  // componentDidMount() {
+  //   WorkService()
+  //     .then(works => this.setState({ works }));
+  // }
   // filterImgs() {
   //
   // }
+  renderGallery() {
+    const gallery = this.state.works.map((work, id) => <li key={id} className="gallery__item"><Link to={`/work/${work.id}`}><WorkItem {...work} /></Link></li>);
+    return gallery;
+  }
+
   render() {
+    // const gallery = this.state.works.map((work, id) => <li key={id} className="gallery__item"><WorkItem {...work} /></li>);
+
     return (
       <div className="work__wrapper">
         <section className="gallery">
           <div className="gallery__container">
-            <div className="gallery__item gallery__item--dark" data-tag="design">
-              {/* <img src="http://placehold.it/400x400" className="responsive-image" alt="" /> */}
-            </div>
-            <div className="gallery__item" data-tag="dev">
-              {/* <img src="http://placehold.it/400x400" className="responsive-image" alt="" /> */}
-            </div>
-            <div className="gallery__item gallery__item--dark" data-tag="design">
-              {/* <img src="http://placehold.it/400x400" className="responsive-image" alt="" /> */}
-            </div>
-            <div className="gallery__item" data-tag="dev">
-              {/* <img src="http://placehold.it/400x400" className="responsive-image" alt="" /> */}
-            </div>
-            <div className="gallery__item gallery__item--dark" data-tag="design">
-              {/* <img src="http://placehold.it/400x400" className="responsive-image" alt="" /> */}
-            </div>
-            <div className="gallery__item" data-tag="dev">
-              {/* <img src="http://placehold.it/400x400" className="responsive-image" alt="" /> */}
-            </div>
+            {this.renderGallery()}
           </div>
         </section>
         <aside>
