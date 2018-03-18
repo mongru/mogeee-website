@@ -55,30 +55,30 @@
   }
   &__link {
     padding: 0 6vw;
-    &::after {
-      content: '';
-      width: 10px;
-      height: 10px;
-      visibility: hidden;
-      display: block;
-      position: absolute;
-      z-index: 1;
-      border-radius: 50%;
-      background-color: $accentColor;
-    }
-    &:hover::after {
-      content: '';
-      width: 10px;
-      visibility: visible;
-      display: block;
-      position: relative;
-      top: -10px;
-      left: 3vw;
-      z-index: 1;
-      border-radius: 50%;
-      background-color: $accentColor;
-      transition: width 0.2s;
-    }
+    // &::after {
+    //   content: '';
+    //   width: 10px;
+    //   height: 10px;
+    //   visibility: hidden;
+    //   display: block;
+    //   position: absolute;
+    //   z-index: 1;
+    //   border-radius: 50%;
+    //   background-color: $accentColor;
+    // }
+    // &:hover::after {
+    //   content: '';
+    //   width: 10px;
+    //   visibility: visible;
+    //   display: block;
+    //   position: relative;
+    //   top: -10px;
+    //   left: 3vw;
+    //   z-index: 1;
+    //   border-radius: 50%;
+    //   background-color: $accentColor;
+    //   transition: width 0.2s;
+    // }
     &:last-child {
       padding-right: 0;
     }

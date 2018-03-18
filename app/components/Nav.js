@@ -1,5 +1,5 @@
 import React from 'react';
-import { Redirect, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 class Nav extends React.Component {
   render() {
@@ -15,8 +15,6 @@ class Nav extends React.Component {
           <ul className="nav__links">
             <li className="nav__link">
               <Link to="/work">work</Link>
-              <Redirect from="/" to="/work" />
-              {/* <Redirect to="/work" push>work</Redirect> */}
             </li>
             <li className="nav__link">
               <Link to="/about">about</Link>

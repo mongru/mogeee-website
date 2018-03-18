@@ -72,6 +72,8 @@
     text-rendering: optimizeLegibility;
   }
   &__img {
+    position: absolute;
+    z-index: -1;
     width: 100%;
   }
 }
