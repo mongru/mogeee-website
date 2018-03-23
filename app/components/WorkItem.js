@@ -26,8 +26,8 @@ class WorkItem extends Component {
 WorkItem.proptypes = {
   title: PropTypes.string,
   description: PropTypes.string,
-  img: PropTypes.any,
-  tags: PropTypes.any,
+  img: PropTypes.node,
+  tags: PropTypes.node,
 };
 
 export default WorkItem;

@@ -8,7 +8,7 @@ class Nav extends React.Component {
         <div className="nav__container">
           <Link to="/" className="nav__logo__link">
             <div className="nav__logo__container">
-              <img className="nav__logo" src="../vendors/img/logo.svg" alt="mogeee logo" />
+              <img className="nav__logo" src="../vendors/img/logo_mogeee.svg" alt="mogeee logo" />
               {/* <h1 className="nav__logo">mogeee</h1> */}
             </div>
           </Link>

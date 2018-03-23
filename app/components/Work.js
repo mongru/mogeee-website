@@ -16,12 +16,22 @@ class Work extends React.Component {
   //   WorkService()
   //     .then(works => this.setState({ works }));
   // }
-  // filterImgs() {
-  //
-  // }
+
   renderGallery() {
-    const gallery = this.state.works.map((work, id) => <li key={id} className="gallery__item"><Link to={`/work/${work.id}`}><WorkItem {...work} /></Link></li>);
-    return gallery;
+    // const gallery = this.state.works.map((work, id) => <li key={id} className="gallery__item"><Link to={`/work/${work.id}`}><WorkItem {...work} /></Link></li>);
+    return this.state.works.map((work) => {
+      return (
+        <li key={work.id} className="gallery__item">
+          <Link to={`/work/${work.id}`}>
+            <WorkItem {...work} />
+          </Link>
+        </li>
+      );
+    });
+  }
+
+  filterProjects() {
+    console.log("AAAA");
   }
 
   render() {
@@ -36,8 +46,9 @@ class Work extends React.Component {
         </section>
         <aside>
           FILTER
-          <button id="designBtn">design</button>
-          <button id="devButton">development</button>
+          <button onClick={this.filterProjects}>design</button>
+          <button onClick={this.filterProjects} >development</button>
+          <button onClick={this.filterProjects}>all projects</button>
         </aside>
       </div>
     );

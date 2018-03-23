@@ -15,7 +15,7 @@ export const works = [
     img: [
       './vendors/img/business_cards_1x.png',
     ],
-    tags: 'design, development',
+    tags: 'development',
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ export const works = [
     img: [
       './vendors/img/business_cards_1x.png',
     ],
-    tags: 'design, development',
+    tags: 'development',
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ export const works = [
     img: [
       './vendors/img/business_cards_1x.png',
     ],
-    tags: 'design, development',
+    tags: 'development',
   },
   {
     id: 5,
@@ -42,7 +42,7 @@ export const works = [
     img: [
       './vendors/img/business_cards_1x.png',
     ],
-    tags: 'design, development',
+    tags: 'development',
   },
   {
     id: 6,
@@ -51,7 +51,7 @@ export const works = [
     img: [
       './vendors/img/business_cards_1x.png',
     ],
-    tags: 'design, development',
+    tags: 'development',
   },
 ];
 

@@ -1,5 +1,5 @@
 .nav {
-  height: 4em;
+  height: 6em;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.99);
   position: fixed;
@@ -8,41 +8,41 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 6vw;
+    padding: 1em 6vw;
   }
   &__logo {
-    width: 10em;
-    // font-family: $superFunkyFont;
+    width: 12em;
+    padding-top: 1em;
     // font-size: map-get($fontSize, h1);
     &__link {
       cursor: pointer;
-      &::after {
-        content: '';
-        width: 0;
-        height: 0;
-        display: block;
-        position: absolute;
-        z-index: 1;
-        border-radius: 50%;
-        background-color: $accentColor;
-      }
-      &:hover {
-        font-family: $superFunkyFont;
-        color: $accentColor;
-      }
-      &:hover::after {
-        content: '';
-        width: 14px;
-        height: 14px;
-        display: block;
-        position: absolute;
-        z-index: 1;
-        top: 1.45em;
-        left: 32vh;
-        border-radius: 50%;
-        background-color: $accentColor;
-        transition: width 0.2s ease-in-out;
-      }
+      // &::after {
+      //   content: '';
+      //   width: 0;
+      //   height: 0;
+      //   display: block;
+      //   position: absolute;
+      //   z-index: 1;
+      //   border-radius: 50%;
+      //   background-color: $accentColor;
+      // }
+      // &:hover {
+      //   font-family: $superFunkyFont;
+      //   color: $accentColor;
+      // }
+      // &:hover::after {
+      //   content: '';
+      //   width: 14px;
+      //   height: 14px;
+      //   display: block;
+      //   position: absolute;
+      //   z-index: 1;
+      //   top: 1.45em;
+      //   left: 32vh;
+      //   border-radius: 50%;
+      //   background-color: $accentColor;
+      //   transition: width 0.2s ease-in-out;
+      // }
     }
     &__container {
       flex-basis: auto;
@@ -55,6 +55,11 @@
   }
   &__link {
     padding: 0 6vw;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    line-height: 1em;
+    font-weight: 600;
+    letter-spacing: 4px;
     // &::after {
     //   content: '';
     //   width: 10px;
@@ -78,6 +83,9 @@
     //   border-radius: 50%;
     //   background-color: $accentColor;
     //   transition: width 0.2s;
+    // }
+    // &:first-child {
+    //   padding-left: 0;
     // }
     &:last-child {
       padding-right: 0;

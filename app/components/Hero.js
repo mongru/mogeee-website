@@ -15,12 +15,12 @@ class Hero extends React.Component {
         <div className="carousel__container">
           <Carousel cellSpacing={20} cellAlign="center" autoplay autoplayInterval="1000" swiping>
             <div className="carousel__item">
-              <h1 className="carousel__heading">I will make your heart
+              {/* <h1 className="carousel__heading">I will make your heart
                 <span className="hero__emphasis">jump.</span>
               </h1>
               <p className="carousel__text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-              </p>
-              <img className="carousel__img" src="../vendors/img/business_cards_1x.png" alt="" />
+              </p> */}
+              <img className="carousel__img" src="../vendors/img/hero.png" alt="" />
             </div>
             <div className="carousel__item">
               <h1 className="carousel__heading">I make your heart
@@ -28,7 +28,7 @@ class Hero extends React.Component {
               </h1>
               <p className="carousel__text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
               </p>
-              <img className="carousel__img" src="../vendors/img/business_cards_1x.png" alt="" />
+              <img className="carousel__img" src="../vendors/img/hero.png" alt="" />
             </div>
             <div className="carousel__item">
               <h1 className="carousel__heading">I your heart
@@ -36,7 +36,7 @@ class Hero extends React.Component {
               </h1>
               <p className="carousel__text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
               </p>
-              <img className="carousel__img" src="../vendors/img/business_cards_1x.png" alt="" />
+              <img className="carousel__img" src="../vendors/img/hero.png" alt="" />
             </div>
             {/* <div className="carousel__item"><img className="carousel__img" src="https://placeimg.com/1000/680/people/grayscale" alt="" /></div>
             <div className="carousel__item"><img className="carousel__img" src="https://placeimg.com/1000/680/tech/grayscale" alt="" /></div>
