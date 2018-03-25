@@ -13,7 +13,7 @@ export const works = [
     title: 'EXPATPAL',
     description: 'Scope of work: UI, UX, development',
     img: [
-      './vendors/img/business_cards_1x.png',
+      './vendors/img/hero.png',
     ],
     tags: 'development',
   },
@@ -31,7 +31,7 @@ export const works = [
     title: 'EXPATPAL',
     description: 'Scope of work: UI, UX, development',
     img: [
-      './vendors/img/business_cards_1x.png',
+      './vendors/img/arrow.svg',
     ],
     tags: 'development',
   },
@@ -40,12 +40,30 @@ export const works = [
     title: 'EXPATPAL',
     description: 'Scope of work: UI, UX, development',
     img: [
-      './vendors/img/business_cards_1x.png',
+      './vendors/img/logo.svg',
+    ],
+    tags: 'design',
+  },
+  {
+    id: 6,
+    title: 'EXPATPAL',
+    description: 'Scope of work: UI, UX, development',
+    img: [
+      './vendors/img/logo_mogeee.svg',
     ],
     tags: 'development',
   },
   {
-    id: 6,
+    id: 7,
+    title: 'EXPATPAL',
+    description: 'Scope of work: UI, UX, development',
+    img: [
+      './vendors/img/business_cards_1x.png',
+    ],
+    tags: 'design',
+  },
+  {
+    id: 8,
     title: 'EXPATPAL',
     description: 'Scope of work: UI, UX, development',
     img: [

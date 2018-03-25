@@ -10,10 +10,10 @@ const Footer = () => {
           <FontAwesome className="footer__icon" name="linkedin" size="1x" />
           <FontAwesome className="footer__icon" name="codepen" size="1x" />
         </div>
-        <div className="footer__btn-box">
+        {/* <div className="footer__btn-box">
           <button className="footer__btn" type="submit" name="button">go go go</button>
           <FontAwesome className="footer__icon" name="arrow-right" size="1x" />
-        </div>
+        </div> */}
       </div>
     </footer>
   );

@@ -1,22 +1,25 @@
 .work__wrapper {
   display: flex;
-  padding-top: 4em;
+  padding-top: 6em;
+  height: 800px;
+  max-height: 90vh;
 }
 .gallery {
   &__container {
-    max-width: 1200px;
+    max-width: 1000px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    // justify-content: space-around;
+    justify-content: space-around;
     // align-items: center;
   }
   &__item {
-    width: 400px;
-    height: 400px;
+    flex-basis: 240px;
+    // width: 200px;
+    height: 200px;
     background-color: $neutralColor;
-    max-width: $max-width;
-    // padding-top: 10vh;
+    // max-width: $max-width;
+    margin-top: 20px;
     // @media screen and #{$desktop} {
     //   width: calc(100% / 3);
     // }
