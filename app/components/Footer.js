@@ -6,14 +6,22 @@ const Footer = () => {
     <footer>
       <div className="footer__container">
         <div className="footer__icons">
-          <FontAwesome className="footer__icon" name="github" size="1x" />
-          <FontAwesome className="footer__icon" name="linkedin" size="1x" />
-          <FontAwesome className="footer__icon" name="codepen" size="1x" />
+          <a href="https://github.com/mongru" target="_blank" rel="noopener noreferrer">
+            <FontAwesome className="footer__icon" name="github" size="1x" />
+          </a>
+          <a href="https://www.linkedin.com/in/monika-grubizna/" target="_blank" rel="noopener noreferrer">
+            <FontAwesome className="footer__icon" name="linkedin" size="1x" />
+          </a>
+          <a href="https://codepen.io/mongru/" target="_blank" rel="noopener noreferrer">
+            <FontAwesome className="footer__icon" name="codepen" size="1x" />
+          </a>
+          <a href="https://www.behance.net/chmurensowa" target="_blank" rel="noopener noreferrer">
+            <FontAwesome className="footer__icon" name="behance" size="1x" />
+          </a>
         </div>
-        {/* <div className="footer__btn-box">
-          <button className="footer__btn" type="submit" name="button">go go go</button>
-          <FontAwesome className="footer__icon" name="arrow-right" size="1x" />
-        </div> */}
+        <div className="footer__copy">
+          <p>designed and developed with <span>😊</span> by Monika Grubizna</p>
+        </div>
       </div>
     </footer>
   );

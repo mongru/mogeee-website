@@ -18,6 +18,7 @@ class Work extends React.Component {
 
   componentDidMount() {
     this.props.setWorks(works);
+    // this.renderGallery();
     // return this.state.works.map((work) => {
     //   return (
     //     <li key={work.id} className="gallery__item">
@@ -29,9 +30,23 @@ class Work extends React.Component {
     // });
   }
 
-  filterProjects() {
-    console.log(this.state.works);
+  filterDesign() {
+    let updatedGallery = this.props.works;
 
+    return updatedGallery.filter((work) => {
+      return work.tags === 'design';
+    });
+
+    this.props.setWorks(updatedGallery);
+
+    // this.setState({
+    //   works: updatedGallery
+    // });
+    // return (this.props.works.filter(work => (work.tags === 'design') ? work : ''));
+  }
+
+  filterDevelopment() {
+    return (this.props.works.filter(work => (work.tags === 'development') ? work : ''));
   }
 
   renderGallery() {
@@ -40,9 +55,9 @@ class Work extends React.Component {
     return this.props.works.map((work) => {
       return (
         <li key={work.id} className="gallery__item">
-          <Link to={`/work/${work.id}`}>
+          {/* <Link to={`/work/${work.id}`}> */}
             <WorkItem {...work} />
-          </Link>
+          {/* </Link> */}
         </li>
       );
     });
@@ -57,7 +72,11 @@ class Work extends React.Component {
         <section className="gallery">
           <div className="gallery__container">
 
-            {
+
+
+            { this.renderGallery() }
+
+            {/* {
               _.map(this.props.works, work => {
                 return (
                   <li key={work.id} className="gallery__item">
@@ -67,14 +86,14 @@ class Work extends React.Component {
                   </li>
                 );
               })
-            }
+            } */}
           </div>
         </section>
-        <aside style={{ height: "50vh", display: "flex", justifyContent: "center", alignItems: "center", flexDirection:"column"}}>
+        {/* <aside style={{ height: "50vh", display: "flex", justifyContent: "center", alignItems: "center", flexDirection:"column"}}>
           FILTER
-          {/* <button onClick={this.filterProjects}>design</button>
-          <button onClick={this.filterProjects}>development</button>
-          <button onClick={this.filterProjects}>all projects</button> */}
+          <button onClick={this.filterDesign.bind(this)}>design</button>
+          <button onClick={this.filterDevelopment.bind(this)}>development</button>
+          <button>all projects</button>
           <FilterLink filter={VisibilityFilters.SHOW_ALL}>
             All
           </FilterLink>
@@ -84,7 +103,7 @@ class Work extends React.Component {
           <FilterLink filter={VisibilityFilters.SHOW_DEVELOPMENT}>
             DEVELOPMENT
           </FilterLink>
-        </aside>
+        </aside> */}
       </div>
     );
   }

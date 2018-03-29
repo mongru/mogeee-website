@@ -19,7 +19,7 @@ const Root = () => {
   return (
     <Provider store={store}>
       <Router>
-        <div className="container__wrapper">
+        <div className="main__wrapper">
           <Nav />
           <Switch>
             <Route path="/work/:id" component={WorkDetail} />

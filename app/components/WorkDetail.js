@@ -5,6 +5,7 @@ import Carousel from 'nuka-carousel';
 class WorkDetail extends Component {
   render() {
     console.log('works from detail', this.props.works);
+    console.log('params from detail', this.props.params);
 
     return (
       <div style={{ display: "flex", justifyContent: "space-around", alignItems: "center", flexDirection: "row-reverse" }}>
