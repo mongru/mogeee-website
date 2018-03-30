@@ -1,3 +1,4 @@
+import _ from 'lodash';
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import WorkModal from './WorkModal';
@@ -57,18 +58,18 @@ class WorkItem extends Component {
           <button className="modal--btn" onClick={() => this.closeModal()}>✕</button>
             <div style={{ display: "flex", justifyContent: "space-around", alignItems: "center", flexDirection: "row-reverse" }}>
               <div style={{ width: "60vw", height: "100%", display: "flex", justifyContent: "space-between", alignItems: "center", flexDirection: "row" }}>
-                <Carousel width='100%' cellSpacing={20} cellAlign="center" autoplay autoplayInterval={1000} swiping>
-                  <div style={{backgroundImage: `url(.${img[0]})`}} className="carousel__item">
-                  </div>
-                  <div className="carousel__item">
-                    <img className="carousel__img" src={img[0]} alt="" />
-                  </div>
-                  <div className="carousel__item">
-                    <img className="carousel__img" src={img[1]} alt="" />
-                  </div>
-                  {/* <div className="carousel__item">
-                    <img className="carousel__img" src="../vendors/img/hero.png" alt="" />
+                <Carousel width='100%' cellAlign="center" slideWidth={1.0} slidesToShow={1} autoplay autoplayInterval={2000} wrapAround swiping>
+                  {/* <div style={{backgroundImage: `url(.${img[0]})`}} className="carousel__item">
                   </div> */}
+                  {
+                    _.map(this.props.img, img => {
+                      return (
+                        <div className="carousel__item">
+                          <img className="carousel__img" src={img} alt="portfolio image" />
+                        </div>
+                      );
+                    })
+                  }
                 </Carousel>
               </div>
               <div style={{ width: "30vw", height: "80vh", backgroundColor:"lightblue"}}>

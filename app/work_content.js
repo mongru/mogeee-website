@@ -4,8 +4,10 @@ export const works = [
     title: 'Harvard Sustainability Hackathon ID',
     description: 'Scope of work: logo, poster, flyer, social media graphics, dtp',
     img: [
-      './vendors/img/business_cards_1x.png',
-      './vendors/img/logo_mogeee.svg',
+      './vendors/img/hh_flyer_view.png',
+      './vendors/img/hh_poster_view.png',
+      './vendors/img/hh_logo_card_1.png',
+      './vendors/img/hh_logo_card_2.png',
     ],
     tags: 'design',
   },
