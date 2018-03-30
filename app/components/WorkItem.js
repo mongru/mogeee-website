@@ -64,7 +64,7 @@ class WorkItem extends Component {
                   {
                     _.map(this.props.img, img => {
                       return (
-                        <div className="carousel__item">
+                        <div key={img} className="carousel__item">
                           <img className="carousel__img" src={img} alt="portfolio image" />
                         </div>
                       );

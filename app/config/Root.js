@@ -1,8 +1,8 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
-import visibilityFilter from '../reducers';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import visibilityFilter from '../reducers';
 import App from '../components/App';
 import Nav from '../components/Nav';
 import VisibleWorkItems from '../containers/VisibleWorkItems';
