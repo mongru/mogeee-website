@@ -43,15 +43,15 @@ class NavMobile extends Component {
     const { open, mobileNavVisible, subMenuOpen } = this.state;
 
     return (
-        <div>
+        <div className="nav-mobile__wrapper">
           <HamburgerMenu
             isOpen={this.state.open}
             menuClicked={this.handleClick.bind(this)}
             width={18}
             height={15}
-            strokeWidth={1}
+            strokeWidth={2}
             rotate={0}
-            color='black'
+            color='darkblue'
             borderRadius={0}
             animationDuration={0.5}
           />
