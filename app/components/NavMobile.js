@@ -25,13 +25,13 @@ class NavMobile extends Component {
       <nav className="nav-mobile">
         <ul className="nav-mobile__links">
           <li className="nav-mobile__link">
-            <Link to="/work">work</Link>
+            <Link to="/work" onClick={this.handleClick.bind(this)}>work</Link>
           </li>
           <li className="nav-mobile__link">
-            <Link to="/about">about</Link>
+            <Link to="/about" onClick={this.handleClick.bind(this)}>about</Link>
           </li>
           <li className="nav-mobile__link">
-            <Link to="/contact">contact</Link>
+            <Link to="/contact" onClick={this.handleClick.bind(this)}>contact</Link>
           </li>
         </ul>
       </nav>
