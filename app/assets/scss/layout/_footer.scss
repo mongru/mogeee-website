@@ -1,26 +1,38 @@
 .footer {
   &__container {
     width: 100%;
-    height: 10%;
+    height: 20vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 2em 6vw;
+    padding: 2em;
+    @include respond-to($mobile) {
+      flex-direction: column;
+    }
   }
   &__icons {
-    width: 10%;
+    width: 30%;
     display: flex;
     justify-content: space-between;
+    @include respond-to($mobile) {
+      width: 90%;
+    }
   }
   &__icon {
     color: $mainColor;
   }
   &__copy {
+    // width: 60%;
+    align-self: center;
     color: $neutralColor;
     text-transform: uppercase;
     font-size: 0.6em;
     letter-spacing: 1px;
+    line-height: 1.4em;
     text-rendering: optimizeLegibility;
+    @include respond-to($mobile) {
+      // width: 100%;
+    }
   }
 }

@@ -1,8 +1,9 @@
 .work__wrapper {
   display: flex;
   padding-top: 6em;
-  height: 800px;
-  max-height: 90vh;
+  justify-content: center;
+  height: 90%;
+  // max-height: 90vh;
 }
 .gallery {
   &__container {
@@ -15,6 +16,7 @@
   }
   &__item {
     flex-basis: 240px;
+    flex-basis: 20vw;
     // width: 200px;
     height: 200px;
     background-color: $neutralColor;
