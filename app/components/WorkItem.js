@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import WorkModal from './WorkModal';
 import Carousel from 'nuka-carousel';
+import Zoom from 'react-reveal/Zoom';
+import Flip from 'react-reveal/Flip';
 
 // const WorkItem = ({ title, description, img, tags }) => (
 //   <div style={{ height: '200px',
@@ -88,11 +90,13 @@ class WorkItem extends Component {
 
     return (
       <div>
-        <div style={itemStyle} onClick={() => this.openModal()}>
-          <h1>{title}</h1>
-          <p>{description}</p>
-          <p>{tags}</p>
-        </div>
+        <Zoom>
+          <div style={itemStyle} onClick={() => this.openModal()}>
+            <h1>{title}</h1>
+            <p>{description}</p>
+            <p>{tags}</p>
+          </div>
+        </Zoom>
         <WorkModal className="work__modal" isOpen={isModalOpen} onClose={() => this.closeModal()}>
           <div style={{display:'flex', justifyContent:'flex-end'}}>
             <button style={buttonStyle} className="modal--btn" onClick={() => this.closeModal()}>✕</button>
