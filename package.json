@@ -28,7 +28,7 @@
   "dependencies": {
     "cross-env": "5.0.1",
     "lodash": "^4.17.5",
-    "nuka-carousel": "^3.0.1",
+    "nuka-carousel": "^4.0.3",
     "prop-types": "^15.6.1",
     "react": "15.6.1",
     "react-dom": "15.6.1",

@@ -31,7 +31,9 @@ const WorkModal = ({
         transform: 'translate(-50%, -50%)',
         zIndex: '9999',
         background: '#fff',
-        width: '80%'
+        width: '80%',
+        height: '80%',
+        overflowY: 'scroll',
     }
 
     let backdropStyle = {
@@ -45,14 +47,13 @@ const WorkModal = ({
     }
 
     return (
-        <div className="main__content--modal">
+        <div>
             <div className={className} style={modalStyle}>
                 {children}
             </div>
-            {!noBackdrop && <div className="main__content--modal" style={backdropStyle} onClick={e => close(e)}/>}
+            {!noBackdrop && <div className="work__modal" style={backdropStyle} onClick={e => close(e)}/>}
         </div>
-    )
-
+    );
 }
 
 export default WorkModal;

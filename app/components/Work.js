@@ -51,7 +51,7 @@ class Work extends React.Component {
 
   renderGallery() {
     // const gallery = this.state.works.map((work, id) => <li key={id} className="gallery__item"><Link to={`/work/${work.id}`}><WorkItem {...work} /></Link></li>);
-    console.log('props from Work.js', this.props.works);
+    // console.log('props from Work.js', this.props.works);
     return this.props.works.map((work) => {
       return (
         <li key={work.id} className="gallery__item">
@@ -111,7 +111,7 @@ class Work extends React.Component {
 
 
 function mapStateToProps(state) {
-    console.log('state', state);
+    // console.log('state from WORK', state);
     const { works } = state;
     return {
         works

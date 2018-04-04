@@ -1,9 +1,10 @@
 @import 'base/all';
-@import 'layout/nav';
-@import 'layout/nav-mobile';
-@import 'layout/hero';
-@import 'layout/work';
-@import 'layout/footer';
+@import 'components/nav';
+@import 'components/nav-mobile';
+@import 'components/hero';
+@import 'components/work';
+@import 'components/work__modal';
+@import 'components/footer';
 
 body {
   color: $mainColor;

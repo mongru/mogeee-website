@@ -1,8 +1,11 @@
 .nav-mobile {
   position: fixed;
   width: 100%;
-  left: 60%;
+  left: 0;
   background-color: rgba(255, 255, 255, 0.99);
+  @include respond-to($mobile) {
+    left: 0;
+  }
   &__wrapper {
     // width: 300px;
     // height: 300px;
@@ -12,6 +15,7 @@
     // z-index: 3;
   }
   &__links {
+    text-align: center;
   }
   &__link {
     // padding: 0 6vw;
