@@ -6,13 +6,13 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 2em;
+    padding: 2em 6vw;
     @include respond-to($mobile) {
       flex-direction: column;
     }
   }
   &__icons {
-    width: 30%;
+    width: 20%;
     display: flex;
     justify-content: space-between;
     @include respond-to($mobile) {
@@ -33,6 +33,7 @@
     text-rendering: optimizeLegibility;
     @include respond-to($mobile) {
       // width: 100%;
+      padding-top: 10%;
     }
   }
 }

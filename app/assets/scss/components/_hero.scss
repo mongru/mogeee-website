@@ -2,15 +2,24 @@
   // background-color: lightgrey;
   &__container {
     height: 90vh;
+    // background-color: lightgrey;
+    // background-image: url('../../vendors/img/hero_2.svg');
     display: flex;
-    // padding: 2vw;
+    padding-top: 5%;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    @include respond-to($tablet-portrait) {
+      height: 100%;
+    }
   }
   &__img {
-    width: auto;
-    height: 84vh;
+    padding-top: 15%;
+    height: 50%;
+    @include respond-to($tablet-portrait) {
+      padding: 10% 0 0 0;
+      height: 70%;
+    }
   }
   // &-btn__container {
   //   position: relative;
@@ -24,22 +33,13 @@
     border-radius: 12px;
     width: 300px;
     height: 50px;
-    margin-top: -8em;
-    // position: absolute;
-    // top: 50%;
-    // left: 50%;
-    // transform: translate(-50%, -50%);
-    // &:after {
-    //   content: url(../../vendors/img/arrow.svg);
-    //   width: 100px;
-    //   height: 100px;
-    //   position: absolute;
-    //   display: block;
-    //   z-index: 10;
-    // }
+    margin-top: 3em;
     &:hover {
       background-color: $mainColor;
       transition: all ease 0.5s;
+    }
+    @include respond-to($tablet-portrait) {
+      margin-top: 0;
     }
   }
   &__link:link,

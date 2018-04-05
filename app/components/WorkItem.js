@@ -102,7 +102,7 @@ class WorkItem extends Component {
             <button className="modal__button" onClick={() => this.closeModal()}>✕</button>
           </div>
           <div className="modal__content">
-            <Carousel width={600} cellAlign='center' initialSlideHeight={400} framePadding='20px' slidesToShow={1} slidesToScroll='auto' swiping>
+            <Carousel width='600px' cellAlign='center' initialSlideHeight={400} framePadding='20px' slidesToShow={1} slidesToScroll='auto' swiping>
               {/* <div style={{backgroundImage: `url(.${img[0]})`}} className="carousel__item">
               </div> */}
               {
