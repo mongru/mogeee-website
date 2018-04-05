@@ -72,8 +72,6 @@ class Work extends React.Component {
         <section className="gallery">
           <div className="gallery__container">
 
-
-
             { this.renderGallery() }
 
             {/* {

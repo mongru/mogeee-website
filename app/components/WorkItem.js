@@ -41,12 +41,7 @@ class WorkItem extends Component {
     const { isModalOpen } = this.state;
 
     const itemStyle = {
-      height: '200px',
-      padding: '60px',
       backgroundImage: `url(${img[0]})`,
-      backgroundSize: 'cover',
-      backgroundRepeat: 'no-repeat',
-      backgroundPosition: 'center center',
     };
 
     const buttonStyle = {
@@ -91,10 +86,9 @@ class WorkItem extends Component {
     return (
       <div>
         <Zoom>
-          <div style={itemStyle} onClick={() => this.openModal()}>
-            <h1>{title}</h1>
-            <p>{description}</p>
-            <p>{tags}</p>
+          <div style={itemStyle} className="work__item" onClick={() => this.openModal()}>
+            <h1 className="work__title">{title}</h1>
+            <p className="work__tag">{tags}</p>
           </div>
         </Zoom>
         <WorkModal className="work__modal" isOpen={isModalOpen} onClose={() => this.closeModal()}>
@@ -116,9 +110,9 @@ class WorkItem extends Component {
               }
             </Carousel>
             <div className="modal__caption">
-              <h1>{title}</h1>
-              <p>{description}</p>
-              <p>{tags}</p>
+              <h1 className="modal__title">{title}</h1>
+              <p className="modal__description">{description}</p>
+              <p className="modal__tag">{tags}</p>
             </div>
           </div>
         </WorkModal>

@@ -12,6 +12,13 @@
     @include respond-to($tablet-portrait) {
       height: 100%;
     }
+    @include respond-to($tablet-landscape) {
+      // height: 90vh;
+    }
+    @include respond-to($desktop) {
+      // padding-top: 2%;
+      height: 90vh;
+    }
   }
   &__img {
     padding-top: 15%;
@@ -19,6 +26,10 @@
     @include respond-to($tablet-portrait) {
       padding: 10% 0 0 0;
       height: 70%;
+    }
+    @include respond-to($desktop) {
+      padding: 0 2%;
+      // height: 60%;
     }
   }
   // &-btn__container {
@@ -34,9 +45,24 @@
     width: 300px;
     height: 50px;
     margin-top: 3em;
+    // &:after {
+    //   content: url(../../vendors/img/btn_arrow.png);
+    //   width: 50px;
+    //   height: 50px;
+    //   // background-color: $neutralColor;
+    //   position: absolute;
+    //   margin: 0;
+    //   top: 50%;
+    //   // bottom: 0;
+    //   right: 0;
+    //   // left: 0;
+    //   // z-index: 99999;
+    //   transform: translate(-50%, -50%);
+    // }
     &:hover {
-      background-color: $mainColor;
+      background-color: $accentColor;
       transition: all ease 0.5s;
+
     }
     @include respond-to($tablet-portrait) {
       margin-top: 0;
