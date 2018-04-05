@@ -1,11 +1,40 @@
 .work {
   &__modal {
     overflow-y: scroll;
+    -webkit-box-shadow: 13px 15px 29px -1px rgba(0,0,0,0.2);
+    -moz-box-shadow: 13px 15px 29px -1px rgba(0,0,0,0.2);
+    box-shadow: 13px 15px 29px -1px rgba(0,0,0,0.2);
     // display: flex;
     // justify-content: center;
     // // align-items: center;
     // flex-direction: row-reverse;
     // height: 80%;
     // width: 80%;
+  }
+}
+
+.modal {
+  &__button {
+    font-size: 2em;
+    display: flex;
+    align-self: flex-end;
+    padding: 0.5em 1em 0 0;
+  }
+  &__content {
+    max-width: 760px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    @include respond-to($mobile) {
+      flex-direction: column;
+    }
+  }
+  &__caption {
+    // width: 25%;
+    margin: 50px;
+    // position: relative;
+    text-align: center;
   }
 }

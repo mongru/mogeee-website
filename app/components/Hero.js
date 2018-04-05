@@ -50,9 +50,11 @@ class Hero extends React.Component {
             <img className="hero__img" src="../vendors/img/hero.png" alt="" />
           </Fade>
           <Bounce>
-            <HeroButton>
-              <Link to="/work" className="hero__link">check what i can do</Link>
-            </HeroButton>
+            <Link to="/work" className="hero__link">
+              <HeroButton>
+                <p className="hero__link">check what i can do</p>
+              </HeroButton>
+            </Link>
           </Bounce>
         </div>
       </section>

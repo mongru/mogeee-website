@@ -56,9 +56,7 @@ class Work extends React.Component {
       return (
         <li key={work.id} className="gallery__item">
           {/* <Link to={`/work/${work.id}`}> */}
-
             <WorkItem {...work} />
-
           {/* </Link> */}
         </li>
       );

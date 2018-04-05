@@ -33,7 +33,9 @@ const WorkModal = ({
         zIndex: '9999',
         background: '#fff',
         width: '80%',
+        maxWidth: '768px',
         height: '80%',
+        maxHeight: '600px',
         overflowY: 'scroll',
     }
 
@@ -49,7 +51,7 @@ const WorkModal = ({
 
     return (
         <div>
-            <div className={className} style={modalStyle}>
+            <div style={modalStyle}>
               <Flip top>
                 {children}
               </Flip>

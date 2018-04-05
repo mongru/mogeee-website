@@ -99,28 +99,28 @@ class WorkItem extends Component {
         </Zoom>
         <WorkModal className="work__modal" isOpen={isModalOpen} onClose={() => this.closeModal()}>
           <div style={{display:'flex', justifyContent:'flex-end'}}>
-            <button style={buttonStyle} className="modal--btn" onClick={() => this.closeModal()}>✕</button>
+            <button className="modal__button" onClick={() => this.closeModal()}>✕</button>
           </div>
-            <div style={modalStyle}>
-              <Carousel width='100%' cellAlign='center' initialSlideHeight={400} framePadding='20px' slidesToShow={1} slidesToScroll='auto' wrapAround swiping>
-                {/* <div style={{backgroundImage: `url(.${img[0]})`}} className="carousel__item">
-                </div> */}
-                {
-                  _.map(this.props.img, img => {
-                    return (
-                      <div key={img} style={sliderItemBox}>
-                        <img src={img} style={sliderItem} alt="portfolio image" />
-                      </div>
-                    );
-                  })
-                }
-              </Carousel>
-              <div style={captionStyle}>
-                <h1>{title}</h1>
-                <p>{description}</p>
-                <p>{tags}</p>
-              </div>
+          <div className="modal__content">
+            <Carousel width={600} cellAlign='center' initialSlideHeight={400} framePadding='20px' slidesToShow={1} slidesToScroll='auto' swiping>
+              {/* <div style={{backgroundImage: `url(.${img[0]})`}} className="carousel__item">
+              </div> */}
+              {
+                _.map(this.props.img, img => {
+                  return (
+                    <div key={img}>
+                      <img src={img} style={sliderItem} alt="portfolio image" />
+                    </div>
+                  );
+                })
+              }
+            </Carousel>
+            <div className="modal__caption">
+              <h1>{title}</h1>
+              <p>{description}</p>
+              <p>{tags}</p>
             </div>
+          </div>
         </WorkModal>
       </div>
     );
