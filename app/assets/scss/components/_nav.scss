@@ -65,15 +65,17 @@
     &::after {
       content: '';
       width: 0;
-      height: 4px;
+      height: 1px;
       visibility: hidden;
       display: block;
-      top: 20px;
+      top: 10px;
       text-align: center;
       // left: -10px;
       position: relative;
       z-index: 1;
       background-color: $electricBlue;
+      transition: width 0.5s;
+
     }
     &:hover::after,
     &:active::after {
@@ -81,7 +83,8 @@
       width: 100%;
       visibility: visible;
       display: block;
-      transition: width 0.2s;
+      transform: scale(3);
+      // transition: width 0.2s;
     }
     &:last-child {
       padding-right: 0;
