@@ -48,7 +48,7 @@ class Hero extends React.Component {
         <div className="hero__container">
           <Fade>
             {/* <img className="hero__img" src="../vendors/img/hero.png" alt="" /> */}
-            <img className="hero__img" src="../vendors/img/hero_2.svg" alt="" />
+            <img className="hero__img" src="../vendors/img/hero_img.png" alt="" />
           </Fade>
           <Bounce>
             <Link to="/work" className="hero__link">
