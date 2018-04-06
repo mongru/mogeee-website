@@ -33,6 +33,7 @@
   }
   &__slider-img {
     height: 200px;
+    background-color: $electricBlue;
     @include respond-to($tablet-portrait) {
       height: 260px;
     }
