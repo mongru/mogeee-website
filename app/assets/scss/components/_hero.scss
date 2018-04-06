@@ -2,7 +2,7 @@
   // background-color: lightgrey;
   &__container {
     height: 90vh;
-    // background-color: lightgrey;
+    // background-color: $electricBlue;
     // background-image: url('../../vendors/img/hero_2.svg');
     display: flex;
     padding-top: 5%;
@@ -23,6 +23,7 @@
   &__img {
     padding-top: 15%;
     height: 50%;
+    shape-rendering: geometricPrecision;
     @include respond-to($tablet-portrait) {
       padding: 10% 0 0 0;
       height: 70%;
@@ -60,7 +61,7 @@
     //   transform: translate(-50%, -50%);
     // }
     &:hover {
-      background-color: $accentColor;
+      background-color: $mainColor;
       transition: all ease 0.5s;
 
     }

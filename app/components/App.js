@@ -1,14 +1,22 @@
 import React from 'react';
 import Hero from './Hero';
 
-class App extends React.Component {
-  render() {
-    return (
-      <main>
-        <Hero />
-      </main>
-    );
-  }
-}
+const App = () => {
+  return (
+    <main>
+      <Hero />
+    </main>
+  );
+};
+
+// class App extends React.Component {
+//   render() {
+//     return (
+//       <main>
+//         <Hero />
+//       </main>
+//     );
+//   }
+// }
 
 export default App;

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import NavMobile from './NavMobile';
 
 class Nav extends React.Component {
@@ -12,36 +13,6 @@ class Nav extends React.Component {
     this.handleResize = this.handleResize.bind(this);
   }
 
-  handleResize() {
-      this.setState({windowWidth: window.innerWidth});
-  }
-
-  renderNavigation() {
-    if(this.state.windowWidth <= 768) {
-        return (
-          <NavMobile mobileNavVisible={this.props.mobileNavVisible} />
-        );
-    } else {
-        return  this.renderNavigationLinks()
-    }
-  }
-
-  renderNavigationLinks() {
-        return (
-            <ul className="nav__links">
-              <li className="nav__link">
-                <Link to="/work">work</Link>
-              </li>
-              <li className="nav__link">
-                <Link to="/about">about</Link>
-              </li>
-              <li className="nav__link">
-                <Link to="/contact">contact</Link>
-              </li>
-            </ul>
-        );
-    }
-
   componentDidMount() {
     this.handleResize();
     window.addEventListener('resize', this.handleResize);
@@ -51,6 +22,35 @@ class Nav extends React.Component {
     window.removeEventListener('resize', this.handleResize);
   }
 
+  renderNavigation() {
+    if (this.state.windowWidth <= 768) {
+      return (
+        <NavMobile mobileNavVisible={this.props.mobileNavVisible} />
+      );
+    }
+    return this.renderNavigationLinks();
+  }
+
+  handleResize() {
+    this.setState({ windowWidth: window.innerWidth });
+  }
+
+  renderNavigationLinks() {
+    return (
+      <ul className="nav__links">
+        <li className="nav__link">
+          <Link to="/work">work</Link>
+        </li>
+        <li className="nav__link">
+          <Link to="/about">about</Link>
+        </li>
+        <li className="nav__link">
+          <Link to="/contact">contact</Link>
+        </li>
+      </ul>
+    );
+  }
+
   render() {
     return (
       <nav className="nav">
@@ -58,7 +58,6 @@ class Nav extends React.Component {
           <Link to="/" className="nav__logo__link">
             <div className="nav__logo__container">
               <img className="nav__logo" src="../vendors/img/logo_mogeee.svg" alt="mogeee logo" />
-              {/* <h1 className="nav__logo">mogeee</h1> */}
             </div>
           </Link>
           { this.renderNavigation() }
@@ -67,5 +66,9 @@ class Nav extends React.Component {
     );
   }
 }
+
+Nav.proptypes = {
+  mobileNavVisible: PropTypes.bool.isRequired,
+};
 
 export default Nav;

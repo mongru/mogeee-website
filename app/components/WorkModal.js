@@ -35,7 +35,7 @@ const WorkModal = ({
         width: '80%',
         maxWidth: '768px',
         height: '80%',
-        maxHeight: '600px',
+        maxHeight: '640px',
         overflowY: 'scroll',
     }
 

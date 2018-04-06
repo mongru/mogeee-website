@@ -55,6 +55,7 @@ const config = {
           use: [
             'css-loader',
             { loader: 'sass-loader', query: { sourceMap: false } },
+            'postcss-loader',
           ],
           publicPath: '../'
         }),

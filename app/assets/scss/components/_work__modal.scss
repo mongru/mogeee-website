@@ -31,6 +31,15 @@
       flex-direction: column;
     }
   }
+  &__slider-img {
+    height: 200px;
+    @include respond-to($tablet-portrait) {
+      height: 260px;
+    }
+    @include respond-to($tablet-landscape) {
+      height: 400px;
+    }
+  }
   &__caption {
     // width: 25%;
     // margin: 50px;
@@ -45,7 +54,8 @@
   }
   &__description {
     font-size: 1em;
-    line-height: 2.5em;
+    line-height: 1em;
+    padding: 20px 0;
   }
   &__tag {
     font-size: 0.8em;

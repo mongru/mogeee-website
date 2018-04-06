@@ -59,6 +59,7 @@ const config = {
                 sourceMap: false,
               },
             },
+            'postcss-loader',
           ],
           publicPath: '../'
         }),

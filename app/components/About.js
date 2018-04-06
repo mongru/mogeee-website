@@ -4,7 +4,7 @@ import Draggable from 'react-draggable';
 class About extends React.Component {
   render() {
     return (
-      <div style={{ height: "100vh", display: "flex", justifyContent: "center", alignItems: "center"}}>
+      <div style={{ height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <Draggable
           axis="y"
           handle=".handle"
