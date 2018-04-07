@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Fade from 'react-reveal/Fade';
-import Bounce from 'react-reveal/Bounce';
+// import Bounce from 'react-reveal/Bounce';
+import RubberBand from 'react-reveal/RubberBand';
+// import LightSpeed from 'react-reveal/LightSpeed';
 import HeroButton from './HeroButton';
 
 
@@ -50,13 +52,13 @@ class Hero extends React.Component {
             {/* <img className="hero__img" src="../vendors/img/hero.png" alt="" /> */}
             <img className="hero__img" src="../vendors/img/hero_img.png" alt="" />
           </Fade>
-          <Bounce>
+          <RubberBand>
             <Link to="/work" className="hero__link">
               <HeroButton>
                 <p className="hero__link">check what i can do</p>
               </HeroButton>
             </Link>
-          </Bounce>
+          </RubberBand>
         </div>
       </section>
     );

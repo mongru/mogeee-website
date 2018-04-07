@@ -35,8 +35,9 @@ const WorkModal = ({
         width: '80%',
         maxWidth: '768px',
         height: '80%',
-        maxHeight: '640px',
+        maxHeight: '768px',
         overflowY: 'scroll',
+        borderRadius: '2%',
     }
 
     let backdropStyle = {

@@ -83,7 +83,7 @@ class WorkItem extends Component {
         <Zoom>
           <div style={itemStyle} className="work__item" onClick={() => this.openModal()} role="gallery miniature">
             <h1 className="work__title">{title}</h1>
-            <p className="work__tag">{tags}</p>
+            {/* <p className="work__tag">{tags}</p> */}
           </div>
         </Zoom>
         <WorkModal className="work__modal" isOpen={isModalOpen} onClose={() => this.closeModal()}>

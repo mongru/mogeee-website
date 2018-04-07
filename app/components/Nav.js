@@ -22,6 +22,10 @@ class Nav extends React.Component {
     window.removeEventListener('resize', this.handleResize);
   }
 
+  handleResize() {
+    this.setState({ windowWidth: window.innerWidth });
+  }
+
   renderNavigation() {
     if (this.state.windowWidth <= 768) {
       return (
@@ -29,10 +33,6 @@ class Nav extends React.Component {
       );
     }
     return this.renderNavigationLinks();
-  }
-
-  handleResize() {
-    this.setState({ windowWidth: window.innerWidth });
   }
 
   renderNavigationLinks() {

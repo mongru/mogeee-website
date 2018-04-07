@@ -13,6 +13,9 @@
     background-repeat: no-repeat;
     background-position: center center;
     position: relative;
+    -webkit-box-shadow: 13px 13px 61px -11px rgba(0,0,99,0.38);
+    -moz-box-shadow: 13px 13px 61px -11px rgba(0,0,99,0.38);
+    box-shadow: 13px 13px 61px -11px rgba(0,0,99,0.38);
     // &:after {
     //   content: '';
     //   height: 100%;

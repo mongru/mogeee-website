@@ -6,7 +6,7 @@ import visibilityFilter from '../reducers';
 import App from '../components/App';
 import Nav from '../components/Nav';
 import VisibleWorkItems from '../containers/VisibleWorkItems';
-import Work from '../components/Work';
+// import Work from '../components/Work';
 import WorkDetail from '../components/WorkDetail';
 import About from '../components/About';
 import Contact from '../components/Contact';

@@ -57,6 +57,9 @@
     width: calc(300px - 2vw);
     height: 50px;
     margin: 2em 0;
+    -webkit-box-shadow: 13px 13px 61px -11px rgba(0,0,99,0.38);
+    -moz-box-shadow: 13px 13px 61px -11px rgba(0,0,99,0.38);
+    box-shadow: 13px 13px 61px -11px rgba(0,0,99,0.38);
     // &:after {
     //   content: url(../../vendors/img/btn_arrow.png);
     //   width: 50px;
