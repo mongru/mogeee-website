@@ -1,5 +1,5 @@
 import React from 'react';
-import Flip from 'react-reveal/Flip';
+// import Flip from 'react-reveal/Flip';
 
 
 const WorkModal = ({
@@ -52,9 +52,7 @@ const WorkModal = ({
     return (
         <div>
             <div style={modalStyle}>
-              <Flip top>
                 {children}
-              </Flip>
             </div>
             {!noBackdrop && <div className="work__modal" style={backdropStyle} onClick={e => close(e)}/>}
         </div>

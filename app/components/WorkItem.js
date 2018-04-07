@@ -4,7 +4,7 @@ import Carousel from 'nuka-carousel';
 import Zoom from 'react-reveal/Zoom';
 import PropTypes from 'prop-types';
 import WorkModal from './WorkModal';
-// import Flip from 'react-reveal/Flip';
+import Flip from 'react-reveal/Flip';
 
 // const WorkItem = ({ title, description, img, tags }) => (
 //   <div style={{ height: '200px',
@@ -87,23 +87,25 @@ class WorkItem extends Component {
           </div>
         </Zoom>
         <WorkModal className="work__modal" isOpen={isModalOpen} onClose={() => this.closeModal()}>
-          <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+          <div className="modal-btn__container">
             <button className="modal__button" onClick={() => this.closeModal()}>✕</button>
           </div>
           <div className="modal__content">
-            <Carousel width={this.state.carouselWidth} cellAlign="center" framePadding="20px" slidesToShow={1} slidesToScroll="auto" autoplay swiping>
-              {/* <div style={{backgroundImage: `url(.${img[0]})`}} className="carousel__item">
-              </div> */}
-              {
-                _.map(this.props.img, img => {
-                  return (
-                    <div key={img}>
-                      <img src={img} className="modal__slider-img" alt="portfolio item" />
-                    </div>
-                  );
-                })
-              }
-            </Carousel>
+            {/* <Flip left> */}
+              <Carousel width={this.state.carouselWidth} cellAlign="center" framePadding="20px" slidesToShow={1} slidesToScroll="auto" autoplay swiping>
+                {/* <div style={{backgroundImage: `url(.${img[0]})`}} className="carousel__item">
+                </div> */}
+                {
+                  _.map(this.props.img, img => {
+                    return (
+                      <div key={img}>
+                        <img src={img} className="modal__slider-img" alt="portfolio item" />
+                      </div>
+                    );
+                  })
+                }
+              </Carousel>
+            {/* </Flip> */}
             <div className="modal__caption">
               <h1 className="modal__title">{title}</h1>
               <p className="modal__description">{description}</p>

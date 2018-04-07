@@ -20,11 +20,12 @@
   &__link {
     // padding: 0 6vw;
     margin: 50px;
-    font-size: 0.9em;
+    font-size: calc(0.9em + 1vw);
     text-transform: uppercase;
     line-height: 1em;
     font-weight: 600;
     letter-spacing: 4px;
+
     &::after {
       content: '';
       width: 0;

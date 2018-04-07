@@ -1,51 +1,62 @@
 .hero {
   // background-color: lightgrey;
   &__container {
-    height: 90vh;
+    // height: 90vh;
     // background-color: $electricBlue;
     // background-image: url('../../vendors/img/hero_2.svg');
     display: flex;
-    padding-top: 5%;
+    padding-top: calc(20% - 10vw);
     justify-content: center;
     align-items: center;
     flex-direction: column;
     @include respond-to($tablet-portrait) {
-      height: 100%;
+      // height: 100%;
     }
     @include respond-to($tablet-landscape) {
       // height: 90vh;
     }
     @include respond-to($desktop) {
       // padding-top: 2%;
-      height: 90vh;
+      // height: 90vh;
     }
   }
   &__img {
-    padding-top: 15%;
-    height: 50%;
-    shape-rendering: geometricPrecision;
+    // padding-top: calc(15% - 4vw);
+    // height: calc(50vh - 4vw);
+    padding-top: calc(30% - 4vw);
+    height: calc(60vh - 10vw);
+    // height: 50%;
+    // shape-rendering: geometricPrecision;
     @include respond-to($tablet-portrait) {
-      padding: 10% 0 0 0;
-      height: 70%;
+      padding-top: calc(10% - 4vw);
+      height: calc(68vh + 4vw);
+    }
+    @include respond-to($tablet-landscape) {
+      padding-top: calc(10% - 4vw);
+      height: calc(50vh + 4vw);
     }
     @include respond-to($desktop) {
+      height: calc(46vh + 4vw);
       padding: 0 2%;
-      // height: 60%;
+    }
+    @include respond-to($large-desktop) {
+      height: calc(50vh + 4vw);
+      padding: 0 2%;
     }
   }
   // &-btn__container {
   //   position: relative;
   // }
   &__btn {
-    background-color: $electricBlue;
+    background-color: $mainColor;
     color: white;
-    font-size: 0.9em;
+    font-size: 1em;
     letter-spacing: 1px;
     text-transform: uppercase;
     border-radius: 12px;
-    width: 300px;
+    width: calc(300px - 2vw);
     height: 50px;
-    margin-top: 3em;
+    margin: 2em 0;
     // &:after {
     //   content: url(../../vendors/img/btn_arrow.png);
     //   width: 50px;
@@ -61,12 +72,15 @@
     //   transform: translate(-50%, -50%);
     // }
     &:hover {
-      background-color: $mainColor;
+      background-color: $electricBlue;
       transition: all ease 0.5s;
 
     }
     @include respond-to($tablet-portrait) {
-      margin-top: 0;
+      // margin-top: 0;
+      // font-size: 1.2em;
+      // width: calc(300px + 2vw);
+      // height: calc(50px + 1vw);
     }
   }
   &__link:link,

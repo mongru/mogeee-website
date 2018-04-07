@@ -12,7 +12,7 @@ export const works = [
       './vendors/img/HH/hh_branding.png',
       './vendors/img/HH/hh_cards.png',
       './vendors/img/HH/hh_bag__2.png',
-      './vendors/img/hh_lanyard__5.png',
+      './vendors/img/HH/hh_lanyard__5.png',
       './vendors/img/HH/hh_box.png',
     ],
     tools: 'AI, PS',
@@ -26,8 +26,6 @@ export const works = [
     img: [
       './vendors/img/kuvva/kuvva1.png',
       './vendors/img/kuvva/kuvva_anim.gif',
-      './vendors/img/kuvva/screen__mix1.png',
-      './vendors/img/kuvva/screen__mix2.png',
       './vendors/img/kuvva/kuvva2.png',
       './vendors/img/kuvva/kuvva3.png',
       './vendors/img/kuvva/kuvva4.png',
@@ -46,7 +44,6 @@ export const works = [
     scope: 'Scope of work: character design, illustration.',
     img: [
       './vendors/img/line/line6.png',
-      './vendors/img/line/line8.png',
       './vendors/img/line/line1.png',
       './vendors/img/line/line2.png',
       './vendors/img/line/line3.png',

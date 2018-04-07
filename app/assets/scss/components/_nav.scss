@@ -10,6 +10,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 1em 6vw;
+    // @include respond-to($large-desktop) {
+    //   padding: 1em 12vw;
+    // }
   }
   &__logo {
     width: 12em;
@@ -59,7 +62,7 @@
   }
   &__link {
     padding: 0 6vw;
-    font-size: 0.9em;
+    font-size: 1em;
     text-transform: uppercase;
     line-height: 1em;
     font-weight: 600;
