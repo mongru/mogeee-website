@@ -2,7 +2,7 @@ export const works = [
   {
     id: 1,
     title: 'Harvard Sustainability Hackathon ID',
-    description: 'Visual Identity of the first Sustainability Hackathon ay Harvard',
+    description: 'Visual Identity of the first Sustainability Hackathon at Harvard',
     scope: 'Scope of work: art direction, graphic design, dtp',
     url: 'https://www.behance.net/gallery/17088813/SUSTAINABILITY-HACKATHON-Harvard',
     img: [
@@ -60,22 +60,22 @@ export const works = [
     id: 4,
     title: 'Epidemic',
     description: 'Graphic / exhibition design for the Centre of Contemporary Art in Torun, PL',
-    scope: 'Scope of work: art direction, graphic design - print & web, dtp',
+    scope: 'Scope of work: art direction, graphic design - print & web materials, dtp',
     url: 'https://www.behance.net/gallery/11628893/EPIDEMIC-ID',
     img: [
       './vendors/img/epidemic/poster.png',
       './vendors/img/epidemic/foto.png',
       './vendors/img/epidemic/epidemic__poster.png',
-      './vendors/img/epidemic/epidemic1.png',
+      './vendors/img/epidemic/foto2.png',
     ],
     tags: 'design',
   },
   {
     id: 13,
     title: 'Where is ISS?',
-    description: 'Single page app built with ReactJS v 15.4',
+    description: 'Single page app built with ReactJS',
     scope: 'Scope of work: design, development',
-    url: 'https://github.com/mongru/Where_is_ISS',
+    url: 'https://mongru.github.io/Where_is_ISS/',
     img: [
       './vendors/img/ISS/ISS1.png',
       './vendors/img/ISS/ISS3.png',
@@ -122,7 +122,7 @@ export const works = [
   {
     id: 11,
     title: 'ExpatPal',
-    description: 'Landing page for the EXPAT__PAL__1.0 app - currently in build.',
+    description: 'Landing page for the EXPAT__PAL__1.0 app - currently in build',
     scope: 'Scope of work: UI, UX, development',
     url: 'https://github.com/mongru/EXPAT__PAL__1.0',
     img: [
@@ -136,7 +136,7 @@ export const works = [
   {
     id: 8,
     title: 'Explorer',
-    description: 'Edition of 100 postcards printed on MOO Luxe Cards. Created exclusively for the show "6 degrees" at the Light Grey Art Lab in Minneapolis.',
+    description: 'Edition of 100 postcards printed on MOO Luxe Cards. Created exclusively for the show "6 degrees" at the Light Grey Art Lab in Minneapolis',
     scope: 'Scope of work: graphic design, illustration, dtp',
     url: 'https://www.behance.net/gallery/11752401/EXPLORER',
     img: [
@@ -173,19 +173,33 @@ export const works = [
       './vendors/img/posters/save_2__poster.png',
       './vendors/img/posters/aiweiwei_movienight.png',
       './vendors/img/posters/sollewitt__poster.png',
+      './vendors/img/posters/epi_2.png',
+      './vendors/img/posters/epi_3.png',
+      './vendors/img/epidemic/epidemic1.png',
     ],
     tags: 'design',
   },
   {
     id: 12,
-    title: 'Webchef',
-    description: 'Branding for a coders collective',
+    title: 'Logos',
+    description: 'Selection of logos for various occasions & clients',
     scope: 'Scope of work: graphic design',
-    url: '',
+    url: 'https://www.behance.net/gallery/15101569/LOGO',
     img: [
       './vendors/img/webchef/webchef_bc.png',
       // './vendors/img/webchef/webc1.png',
       // './vendors/img/webchef/webc2.png',
+    ],
+    tags: 'design',
+  },
+  {
+    id: 14,
+    title: 'Vote GMO',
+    description: 'Self-published poster about the influence of genetically modified foods on the human body',
+    scope: 'Scope of work: graphic design',
+    url: 'https://www.behance.net/gallery/17210187/American-Illustration-33',
+    img: [
+      './vendors/img/gmo/gmo1.png',
     ],
     tags: 'design',
   },
