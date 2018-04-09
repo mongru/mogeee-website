@@ -70,7 +70,7 @@
   }
   &__description {
     font-size: 1em;
-    line-height: 1em;
+    line-height: 1.4em;
     padding: 10px 0 0 0;
   }
   &__scope {
@@ -92,6 +92,19 @@
     font-size: 0.7em;
     text-transform: uppercase;
     color: $neutralColor;
+  }
+  &__case-url a {
+    text-transform: uppercase;
+    color: $electricBlue;
+    font-weight: 600;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    text-rendering: optimizeLegibility;
+    line-height: 3em;
+    transition: all ease 0.5s;
+    &:hover {
+      color: $neutralColor;
+    }
   }
 }
 

@@ -2,8 +2,9 @@ export const works = [
   {
     id: 1,
     title: 'Harvard Sustainability Hackathon ID',
-    description: 'Scope of work: logo, poster, flyer, social media graphics, dtp',
-    scope: 'Scope of work: logo, poster, flyer, social media graphics, dtp',
+    description: 'Visual Identity of the first Sustainability Hackathon ay Harvard',
+    scope: 'Scope of work: art direction, graphic design, dtp',
+    url: 'https://www.behance.net/gallery/17088813/SUSTAINABILITY-HACKATHON-Harvard',
     img: [
       './vendors/img/HH/HH_anim.gif',
       './vendors/img/HH/hh_screen_prev.png',
@@ -22,7 +23,8 @@ export const works = [
     id: 2,
     title: 'Kuvva Wallpapers',
     description: 'Desktop and mobile wallpapers designed for Kuvva.',
-    scope: 'Scope of work: character design, illustration.',
+    scope: 'Scope of work: character design, illustration, art direction',
+    url: 'https://www.behance.net/gallery/15558035/WALLPAPERS-for-KUVVA',
     img: [
       './vendors/img/kuvva/kuvva1.png',
       './vendors/img/kuvva/kuvva_anim.gif',
@@ -41,7 +43,8 @@ export const works = [
     id: 3,
     title: 'LINE Mobile Wallpapers',
     description: 'Series of mobile wallpapers designed for LINE Deco App.',
-    scope: 'Scope of work: character design, illustration.',
+    scope: 'Scope of work: character design, illustration, art direction',
+    url: 'https://www.behance.net/gallery/17161511/LINE-DECO',
     img: [
       './vendors/img/line/line6.png',
       './vendors/img/line/line1.png',
@@ -56,8 +59,9 @@ export const works = [
   {
     id: 4,
     title: 'Epidemic',
-    description: 'Graphic / exhibition design',
-    scope: 'Scope of work: logo, poster, flyer, promotional materials - print & web, dtp',
+    description: 'Graphic / exhibition design for the Centre of Contemporary Art in Torun, PL',
+    scope: 'Scope of work: art direction, graphic design - print & web, dtp',
+    url: 'https://www.behance.net/gallery/11628893/EPIDEMIC-ID',
     img: [
       './vendors/img/epidemic/poster.png',
       './vendors/img/epidemic/foto.png',
@@ -67,10 +71,23 @@ export const works = [
     tags: 'design',
   },
   {
+    id: 13,
+    title: 'Where is ISS?',
+    description: 'Single page app built with ReactJS v 15.4',
+    scope: 'Scope of work: design, development',
+    url: 'https://github.com/mongru/Where_is_ISS',
+    img: [
+      './vendors/img/ISS/ISS1.png',
+      './vendors/img/ISS/ISS3.png',
+      './vendors/img/ISS/ISS_move.gif',
+    ],
+    tags: 'development',
+  },
+  {
     id: 5,
     title: 'Washington Post',
-    description: 'Illustration',
-    scope: 'Scope of work: logo, poster, flyer, promotional materials - print & web, dtp',
+    description: 'There are no perfect victims / The Washington Post Sunday Outlook section / AD Emmet Smith ',
+    scope: 'Scope of work: illustration',
     img: [
       './vendors/img/WP/washpost2.png',
       './vendors/img/WP/washpost1.png',
@@ -80,8 +97,9 @@ export const works = [
   {
     id: 6,
     title: 'Smithsonian',
-    description: 'Scope of work: UI, UX, development',
-    scope: 'Scope of work: logo, poster, flyer, promotional materials - print & web, dtp',
+    description: 'Cover art for Smithsonian Magazine. The cover story is about the damage and destruction of archaeological sites and artifacts of the Middle East / AD Maria Keehan',
+    scope: 'Scope of work: illustration',
+    url: 'https://www.behance.net/gallery/37238623/SMITHSONIAN-MAGAZINE',
     img: [
       './vendors/img/Smithsonian/smith1.png',
       './vendors/img/Smithsonian/smith2.png',
@@ -91,8 +109,9 @@ export const works = [
   {
     id: 7,
     title: 'Princess and the pea',
-    description: 'Scope of work: UI, UX, development',
-    scope: 'Scope of work: logo, poster, flyer, promotional materials - print & web, dtp',
+    description: 'Fluorescent stage design for "The Princess and the Pea" The Enchanted World Puppet Theatre, Torun, PL',
+    scope: 'Scope of work: creative direction, graphic design, set design',
+    url: 'https://www.behance.net/gallery/7555639/The-Princess-and-the-Pea',
     img: [
       './vendors/img/PP/PP_anim.gif',
       './vendors/img/PP/pea1.png',
@@ -101,10 +120,25 @@ export const works = [
     tags: 'design',
   },
   {
+    id: 11,
+    title: 'ExpatPal',
+    description: 'Landing page for the EXPAT__PAL__1.0 app - currently in build.',
+    scope: 'Scope of work: UI, UX, development',
+    url: 'https://github.com/mongru/EXPAT__PAL__1.0',
+    img: [
+      './vendors/img/expal/ex1.png',
+      './vendors/img/expal/responsive600x400.gif',
+      './vendors/img/expal/ex3.png',
+      './vendors/img/expal/ex2.png',
+    ],
+    tags: 'development',
+  },
+  {
     id: 8,
     title: 'Explorer',
-    description: 'Scope of work: UI, UX, development',
-    scope: 'Scope of work: logo, poster, flyer, promotional materials - print & web, dtp',
+    description: 'Edition of 100 postcards printed on MOO Luxe Cards. Created exclusively for the show "6 degrees" at the Light Grey Art Lab in Minneapolis.',
+    scope: 'Scope of work: graphic design, illustration, dtp',
+    url: 'https://www.behance.net/gallery/11752401/EXPLORER',
     img: [
       './vendors/img/explorer/ex1.png',
       './vendors/img/explorer/ex2.png',
@@ -114,8 +148,9 @@ export const works = [
   {
     id: 9,
     title: 'Editorial',
-    description: 'Scope of work: UI, UX, development',
-    scope: 'Scope of work: logo, poster, flyer, promotional materials - print & web, dtp',
+    description: 'Selected editorial illustrations for KONTAKT Magazine',
+    scope: 'Scope of work: illustration',
+    url: 'https://www.behance.net/gallery/8577805/KONTAKT-Magazine',
     img: [
       './vendors/img/illu/k2.png',
       './vendors/img/illu/k1.png',
@@ -130,8 +165,9 @@ export const works = [
   {
     id: 10,
     title: 'Posters',
-    description: 'Scope of work: UI, UX, development',
-    scope: 'Scope of work: logo, poster, flyer, promotional materials - print & web, dtp',
+    description: 'Selected posters',
+    scope: 'Scope of work: graphic design, dtp',
+    url: '',
     img: [
       './vendors/img/posters/save__poster.png',
       './vendors/img/posters/save_2__poster.png',
@@ -141,22 +177,15 @@ export const works = [
     tags: 'design',
   },
   {
-    id: 11,
-    title: 'ExpatPal',
-    description: 'Scope of work: UI, UX, development',
-    scope: 'Scope of work: logo, poster, flyer, promotional materials - print & web, dtp',
-    img: [
-      './vendors/img/expal/ex1.png',
-    ],
-    tags: 'development',
-  },
-  {
     id: 12,
     title: 'Webchef',
-    description: 'Scope of work: UI, UX, development',
-    scope: 'Scope of work: logo, poster, flyer, promotional materials - print & web, dtp',
+    description: 'Branding for a coders collective',
+    scope: 'Scope of work: graphic design',
+    url: '',
     img: [
-      './vendors/img/webchef_bc.png',
+      './vendors/img/webchef/webchef_bc.png',
+      // './vendors/img/webchef/webc1.png',
+      // './vendors/img/webchef/webc2.png',
     ],
     tags: 'design',
   },

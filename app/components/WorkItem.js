@@ -71,7 +71,7 @@ class WorkItem extends Component {
 
   render() {
     // console.log("img z ITEM", this.props.img[0]);
-    const { title, description, img, tags, scope, tools } = this.props;
+    const { title, description, img, tags, scope, tools, url } = this.props;
     const { isModalOpen, carouselWidth } = this.state;
 
     const itemStyle = {
@@ -92,7 +92,7 @@ class WorkItem extends Component {
           </div>
           <div className="modal__content">
             {/* <Flip left> */}
-              <Carousel width={this.state.carouselWidth} cellAlign="center" framePadding="20px" slidesToShow={1} slidesToScroll="auto" autoplay swiping>
+              <Carousel width={this.state.carouselWidth} cellAlign="center" framePadding="20px" slidesToShow={1} slidesToScroll="auto" swiping>
                 {/* <div style={{backgroundImage: `url(.${img[0]})`}} className="carousel__item">
                 </div> */}
                 {
@@ -109,8 +109,9 @@ class WorkItem extends Component {
             <div className="modal__caption">
               <h1 className="modal__title">{title}</h1>
               <p className="modal__description">{description}</p>
-              <p className="modal__scope">{scope}</p>
-              <p className="modal__tag">{tags}</p>
+              <p className="modal__scope modal__tag">{scope}</p>
+              {/* <p className="modal__tag">{tags}</p> */}
+              <p className="modal__case-url"><a href={url} target="_blank" rel="noopener noreferrer">click here to see more</a></p>
               {/* <p className="modal__tools">tools: {tools}</p> */}
             </div>
           </div>

@@ -27,7 +27,7 @@ class About extends React.Component {
               bounds="parent"
             >
               <div>
-                <div className="about__puzzle">drag stripes ⬆ or ⬇ to remove the blinds</div>
+                <div className="about__puzzle">drag stripes ⬆ or ⬇ to move the blinds</div>
               </div>
             </Draggable>
             <Draggable
