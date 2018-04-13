@@ -57,9 +57,9 @@ class Work extends React.Component {
     return (
       <div className="work__wrapper">
         <section className="gallery">
-          <div className="gallery__container">
+          <ul className="gallery__container">
             { this.renderGallery() }
-          </div>
+          </ul>
         </section>
         {/* <aside style={{ height: "50vh", display: "flex", justifyContent: "center", alignItems: "center", flexDirection:"column"}}>
           FILTER

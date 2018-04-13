@@ -5,6 +5,7 @@ import Zoom from 'react-reveal/Zoom';
 import PropTypes from 'prop-types';
 import WorkModal from './WorkModal';
 import Flip from 'react-reveal/Flip';
+import Img from 'react-image-smooth-loading';
 
 // const WorkItem = ({ title, description, img, tags }) => (
 //   <div style={{ height: '200px',
@@ -19,13 +20,31 @@ import Flip from 'react-reveal/Flip';
 //   </div>
 // );
 
+// Define which placeholder to show while the image is loading
+// Can be any image file.
+// There's already a default one in base64, but you'd like to change ;)
+Img.globalPlaceholder = '../vendors/img/hero.png';
+
+// export default function ImageList({ list }) {
+//   return (
+//     <div className="image-grid">
+//       {list.map(url => (
+//         <ImageItemWrapper>
+//           <Img src={url} />
+//           <p>My awesome image</p>
+//         </ImageItemWrapper>
+//       )}
+//     </div>
+//   )
+// }
+
 class WorkItem extends Component {
   constructor(props) {
     super(props);
     this.state = {
       windowWidth: window.innerWidth,
       isModalOpen: false,
-      carouselWidth: '600px',
+      carouselWidth: '100%',
     };
     this.handleResize = this.handleResize.bind(this);
     this.setCarouselWidth = this.setCarouselWidth.bind(this);
@@ -93,13 +112,22 @@ class WorkItem extends Component {
           <div className="modal__content">
             {/* <Flip left> */}
               <Carousel width={this.state.carouselWidth} cellAlign="center" framePadding="20px" slidesToShow={1} slidesToScroll="auto" swiping>
-                {/* <div style={{backgroundImage: `url(.${img[0]})`}} className="carousel__item">
+                {/* <div style={{backgroundImage: `url(.${img[0]})`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat'}} className="carousel__item">
                 </div> */}
+                {/* {
+                  _.map(this.props.img, img => {
+                    return (
+                        <div style={{backgroundImage: `url(.${img})`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat'}} className="carousel__item"></div>
+                    );
+                  })
+                } */}
                 {
                   _.map(this.props.img, img => {
                     return (
                       <div key={img}>
-                        <img src={img} className="modal__slider-img" alt="portfolio item" />
+                        {/* <Img src={img} className="modal__slider-img" alt="portfolio item"> */}
+                          <img src={img} className="modal__slider-img" alt="portfolio item" />
+                        {/* </Img> */}
                       </div>
                     );
                   })
