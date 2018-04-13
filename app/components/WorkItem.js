@@ -87,7 +87,6 @@ class WorkItem extends Component {
   }
 
   render() {
-    // console.log("img z ITEM", this.props.img[0]);
     const { title, description, img, tags, scope, tools, url } = this.props;
     const { isModalOpen, carouselWidth } = this.state;
 
