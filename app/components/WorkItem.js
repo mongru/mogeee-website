@@ -21,8 +21,6 @@ import Img from 'react-image-smooth-loading';
 // );
 
 // Define which placeholder to show while the image is loading
-// Can be any image file.
-// There's already a default one in base64, but you'd like to change ;)
 Img.globalPlaceholder = '../vendors/img/hero.png';
 
 // export default function ImageList({ list }) {
