@@ -153,7 +153,6 @@ export const works = [
     url: 'https://www.behance.net/gallery/8577805/KONTAKT-Magazine',
     img: [
       './vendors/img/illu/k2.png',
-      './vendors/img/illu/k1.png',
       './vendors/img/illu/k3.png',
       './vendors/img/illu/k4.png',
       './vendors/img/illu/helpless1.png',
