@@ -6,6 +6,7 @@ import visibilityFilter from '../reducers';
 import App from '../components/App';
 import Nav from '../components/Nav';
 import VisibleWorkItems from '../containers/VisibleWorkItems';
+import ScrollToTopRoute from '../components/ScrollToTop';
 // import Work from '../components/Work';
 import WorkDetail from '../components/WorkDetail';
 import About from '../components/About';
@@ -23,12 +24,18 @@ const Root = () => {
       <Router>
           <div className="main__wrapper">
             <Nav />
-            <Switch>
+            {/* <Switch>
               <Route path="/work/:id" component={WorkDetail} />
               <Route path="/work" component={VisibleWorkItems} />
               <Route path="/about" component={About} />
               <Route path="/contact" component={Contact} />
               <Route path="/" component={App} />
+            </Switch> */}
+            <Switch>
+              <ScrollToTopRoute path="/work" component={VisibleWorkItems} />
+              <ScrollToTopRoute path="/about" component={About} />
+              <ScrollToTopRoute path="/contact" component={Contact} />
+              <ScrollToTopRoute path="/" component={App} />
             </Switch>
             <Footer />
           </div>
