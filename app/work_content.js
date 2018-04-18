@@ -127,7 +127,6 @@ export const works = [
     url: 'https://github.com/mongru/EXPAT__PAL__1.0',
     img: [
       './vendors/img/expal/ex1.png',
-      './vendors/img/expal/responsive600x400.gif',
       './vendors/img/expal/ex3.png',
       './vendors/img/expal/ex2.png',
     ],

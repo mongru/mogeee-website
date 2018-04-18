@@ -15,21 +15,23 @@ import Footer from '../components/Footer';
 const store = createStore(visibilityFilter);
 
 
+
+
 const Root = () => {
   return (
     <Provider store={store}>
       <Router>
-        <div className="main__wrapper">
-          <Nav />
-          <Switch>
-            <Route path="/work/:id" component={WorkDetail} />
-            <Route path="/work" component={VisibleWorkItems} />
-            <Route path="/about" component={About} />
-            <Route path="/contact" component={Contact} />
-            <Route path="/" component={App} />
-          </Switch>
-          <Footer />
-        </div>
+          <div className="main__wrapper">
+            <Nav />
+            <Switch>
+              <Route path="/work/:id" component={WorkDetail} />
+              <Route path="/work" component={VisibleWorkItems} />
+              <Route path="/about" component={About} />
+              <Route path="/contact" component={Contact} />
+              <Route path="/" component={App} />
+            </Switch>
+            <Footer />
+          </div>
       </Router>
     </Provider>
   );
