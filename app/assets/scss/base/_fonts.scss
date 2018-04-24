@@ -1,14 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900');
-@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash&subset=latin-ext');
-@import url('https://fonts.googleapis.com/css?family=Vampiro+One&subset=latin-ext');
-@import url('https://fonts.googleapis.com/css?family=Montserrat:900');
 @import url('https://fonts.googleapis.com/css?family=Croissant+One&subset=latin-ext');
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 $mainFont: 'Source Sans Pro', sans-serif;
 $headingFont: 'Croissant One', cursive;
-$funkyFont: 'Berkshire Swash', cursive;
-$superFunkyFont: 'Vampiro One', cursive;
 
 $fontSize: (
   h1: 2em,

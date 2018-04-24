@@ -8,9 +8,6 @@
     flex-wrap: wrap;
     flex-direction: column-reverse;
     margin-top: 40px;
-    // background-image: url('../../vendors/img/me.png');
-    // background-size: cover;
-    // background-position: center center;
     @include respond-to($desktop) {
       height: 100vh;
       flex-direction: row;
@@ -26,12 +23,9 @@
       align-items: center;
       &--light {
         width: 100%;
-        // height: 30%;
-        // background-color: $neutralColor;
         display: flex;
         justify-content: center;
         align-items: center;
-        // padding-top: 20%;
         flex-direction: column;
         @include respond-to($desktop) {
           width: 50%;
@@ -46,26 +40,17 @@
   }
 
   &__description {
-    // height: inherit;
-    // width: 100%;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
     font-weight: 600;
     text-rendering: optimizeLegibility;
     font-size: calc(0.7em + 2vw);
     line-height: 2em;
     padding: 1em;
-    // margin-top: calc(8vh + 18vw);
   }
   &__note {
     display: block;
     padding: 1em;
     font-size: calc(0.7em + 1vw);
-    // padding: 2em;
-    // font-size: calc(0.4em + 1vw);
     line-height: 2em;
-    // margin-top: 10px;
     a {
       font-weight: 600;
       color: $electricBlue;
@@ -75,17 +60,11 @@
       font-size: calc(0.4em + 1vw);
     }
   }
-  // &__link {
-  //   font-weight: 600;
-  //   color: $electricBlue;
-  // }
-
   &__dragabble {
     display: none;
     width: 100%;
     height: 100vh;
     opacity: 0.98;
-    // max-height: 100vh;
     @include respond-to($desktop) {
       display: block;
       width: 100%;
@@ -127,8 +106,5 @@
       background-color: $accentColor;
       color: $mainColor;
     }
-    // @include respond-to($tablet-landscape) {
-    //   height: 100px;
-    // }
   }
 }

@@ -1,6 +1,4 @@
 import React from 'react';
-// import Flip from 'react-reveal/Flip';
-
 
 const WorkModal = ({
     history,

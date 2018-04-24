@@ -1,32 +1,20 @@
 .hero {
-  // background-color: lightgrey;
   &__container {
-    // height: 90vh;
-    // background-color: $electricBlue;
-    // background-image: url('../../vendors/img/hero_2.svg');
     display: flex;
     padding-top: calc(20% - 10vw);
     justify-content: center;
     align-items: center;
     flex-direction: column;
     @include respond-to($tablet-portrait) {
-      // height: 100%;
     }
     @include respond-to($tablet-landscape) {
-      // height: 90vh;
     }
     @include respond-to($desktop) {
-      // padding-top: 2%;
-      // height: 90vh;
     }
   }
   &__img {
-    // padding-top: calc(15% - 4vw);
-    // height: calc(50vh - 4vw);
     padding-top: calc(30% - 4vw);
     height: calc(60vh - 10vw);
-    // height: 50%;
-    // shape-rendering: geometricPrecision;
     @include respond-to($tablet-portrait) {
       padding-top: calc(10% - 4vw);
       height: calc(68vh + 4vw);
@@ -44,9 +32,6 @@
       padding: 0 2%;
     }
   }
-  // &-btn__container {
-  //   position: relative;
-  // }
   &__btn {
     background-color: $mainColor;
     color: white;
@@ -96,8 +81,6 @@
     font-size: map-get($fontSize, h1);
     letter-spacing: 0.4em;
     line-height: map-get($lineHeight, h1);
-    // position: relative;
-    // text-align: center;
     align-self: center;
   }
   &__emphasis {
@@ -119,9 +102,6 @@
     justify-content: center;
     align-items: center;
     padding-top: 3em;
-    // border: 3em solid $accentColor;
-    // height: 90vh;
-    // padding: 0 6vw;
   }
   &__item {
     height: 90vh;
@@ -130,8 +110,6 @@
     align-items: center;
     flex-direction: column;
     width: auto;
-    // border: 3em solid $accentColor;
-    // background-color: lightgrey;
   }
   &__heading {
     font-family: $headingFont;

@@ -76,7 +76,6 @@
       display: block;
       top: 10px;
       text-align: center;
-      // left: -10px;
       position: relative;
       z-index: 1;
       background-color: $electricBlue;
@@ -90,7 +89,6 @@
       visibility: visible;
       display: block;
       transform: scale(2.5);
-      // transition: width 0.2s;
     }
     &:last-child {
       padding-right: 0;

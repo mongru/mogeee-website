@@ -1,7 +1,6 @@
 .footer {
   &__container {
     width: 100%;
-    // height: 16vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -10,9 +9,6 @@
     @include respond-to($desktop) {
       flex-direction: row;
     }
-    // @include respond-to($large-desktop) {
-    //   padding: 3em 12vw;
-    // }
   }
   &__icons {
     width: 80%;
@@ -20,10 +16,6 @@
     justify-content: space-between;
     font-size: 1em;
     margin-bottom: 1em;
-    @include respond-to($tablet-portrait) {
-      // width: 40%;
-
-    }
     @include respond-to($tablet-landscape) {
       width: 40%;
       font-size: 1.2em;
@@ -37,7 +29,6 @@
   }
   &__icon {
     color: $mainColor;
-
   }
   &__copy {
     align-self: center;

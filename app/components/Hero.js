@@ -49,8 +49,7 @@ class Hero extends React.Component {
       <section className="hero">
         <div className="hero__container">
           <Fade>
-            {/* <img className="hero__img" src="../vendors/img/hero.png" alt="" /> */}
-            <img className="hero__img" src="../vendors/img/hero_img.png" alt="" />
+            <img className="hero__img" src="../vendors/img/hero_img.png" alt="mogeee hero image" />
           </Fade>
           <RubberBand>
             <Link to="/work" className="hero__link">
