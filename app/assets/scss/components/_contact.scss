@@ -1,0 +1,16 @@
+.contact {
+  &__container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  &__description {
+    font-weight: 600;
+    text-rendering: optimizeLegibility;
+    font-size: calc(0.7em + 2vw);
+    line-height: 2em;
+    padding: 1em;
+  }
+}
