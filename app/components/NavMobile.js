@@ -46,7 +46,7 @@ class NavMobile extends Component {
       <div className="nav-mobile__wrapper">
         <HamburgerMenu
           isOpen={this.state.open}
-          menuClicked={this.handleClick.bind(this)}
+          menuClicked={this.handleClick}
           width={18}
           height={15}
           strokeWidth={2}
@@ -55,7 +55,7 @@ class NavMobile extends Component {
           borderRadius={0}
           animationDuration={0.5}
         />
-        { open && mobileNavVisible && subMenuOpen ? this.renderMobileNav() : '' }
+        { open && mobileNavVisible && subMenuOpen ? this.renderMobileNav() : null }
       </div>
     );
   }
