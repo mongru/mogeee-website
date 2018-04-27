@@ -11,6 +11,8 @@ class Nav extends React.Component {
       mobileNavVisible: false,
     };
     this.handleResize = this.handleResize.bind(this);
+    this.renderNavigation = this.renderNavigation.bind(this);
+    this.renderNavigationLinks = this.renderNavigationLinks.bind(this);
   }
 
   componentDidMount() {

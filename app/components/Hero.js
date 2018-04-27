@@ -10,7 +10,7 @@ const Hero = () => {
     <section className="hero">
       <div className="hero__container">
         <Fade>
-          <img className="hero__img" src="../vendors/img/hero_img.png" alt="mogeee hero image" />
+          <img className="hero__img" src="../vendors/img/hero_img.png" alt="mogeee hero" />
         </Fade>
         <RubberBand>
           <Link to="/work" className="hero__link">
@@ -22,6 +22,6 @@ const Hero = () => {
       </div>
     </section>
   );
-}
+};
 
 export default Hero;
