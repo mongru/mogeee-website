@@ -10,6 +10,17 @@ import WorkItem from './WorkItem';
 // import { VisibilityFilters, setWorks, setVisibilityFilter } from '../actions';
 import { setWorks } from '../actions';
 
+import Loadable from 'react-loadable';
+import Loader from './Loader';
+import fakeDelay from './fakeDelay';
+// import path from 'path';
+
+
+const LoadableWorkItem = Loadable({
+  loader: () => fakeDelay(400).then(() => import('./WorkItem')),
+  loading: Loader,
+});
+
 class Work extends React.Component {
   // constructor(props) {
   //   super(props);
@@ -46,7 +57,7 @@ class Work extends React.Component {
       return (
         <li key={work.id} className="gallery__item">
           {/* <Link to={`/work/${work.id}`}> */}
-            <WorkItem {...work} />
+            <LoadableWorkItem {...work} />
           {/* </Link> */}
         </li>
       );

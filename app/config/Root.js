@@ -16,8 +16,6 @@ import Footer from '../components/Footer';
 const store = createStore(visibilityFilter);
 
 
-
-
 const Root = () => {
   return (
     <Provider store={store}>
