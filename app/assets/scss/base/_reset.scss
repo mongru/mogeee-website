@@ -127,8 +127,6 @@ q {
 blockquote,
 q {
     quotes: none;
-
-    ,
     &:after,
     &:before {
         content: '';
