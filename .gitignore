@@ -4,3 +4,7 @@ package-lock.json
 functions
 dist
 firestore.indexes.json
+firestore.rules
+database.rules.json
+.firebaserc
+
